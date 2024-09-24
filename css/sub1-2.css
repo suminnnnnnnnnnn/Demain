@@ -1,0 +1,423 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    min-width: 1450px;
+    cursor: url(../image/cursor.png), auto;
+}
+a:hover{
+    cursor: url(../image/cursor_click.png), auto;
+}
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+body::-webkit-scrollbar {
+    width: 8px;  /* 스크롤바의 너비 */
+}
+
+body::-webkit-scrollbar-thumb {
+    height: 20%; /* 스크롤바의 길이 */
+    background: #43505a; /* 스크롤바의 색상 */
+    border-radius: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    background: rgba(201, 201, 201, 0.1);  /*스크롤바 뒷 배경 색상*/
+}
+
+/* Header _ Start */
+
+/* 고정 헤더 */
+#header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 98;
+}
+
+.hd_content_wrap {
+    margin: 0;
+    width: 100%;
+    height: 65px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    position: fixed;
+    padding: 0 50px;
+    box-sizing: border-box;
+    z-index: 99;
+}
+.head_logo a {
+    width: 140px;
+    height: 65px;
+    display: block;
+    background-image: url(../image/hd_logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    align-self: center;
+}
+
+.head_link {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+}
+
+.head_link li a {
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-size: 86%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.head_link li:nth-child(2) a {
+    margin: 0 25px;
+}
+
+.search a {
+    background-image: url(../image/search.png);
+}
+
+.cart a {
+    background-image: url(../image/cart.png);
+}
+/* 햄버거메뉴 */
+.menu-trigger,
+.menu-trigger span {
+  display: inline-block;
+  transition: all 0.4s;
+  box-sizing: border-box;
+}
+.menu-trigger {
+    position: relative;
+    width: 30px;
+    height: 30px;
+  }
+  
+  .menu-trigger span {
+    position: absolute;
+    left: 0;
+    width: 22px;
+    height: 3px;
+    background-color: #4b565e;
+  }
+  
+  .menu-trigger span:nth-of-type(1) {
+    top: 3px;
+    transition: all 0.4s ease;
+  }
+  
+  .menu-trigger span:nth-of-type(2) {
+    top: 11px;
+    transition: all 0.2s ease;
+  }
+  
+  .menu-trigger span:nth-of-type(3) {
+    bottom: 3px;
+    transition: all 0.4s ease;
+  }
+  
+  /* 2th bar 사라지고,  1st 3rd bar 회전하며 X  */
+  
+  .menu-trigger.active-1 span:nth-of-type(1) {
+    transform: translateY(8px) rotate(-45deg);
+    width: 24px;
+    transition: all 0.4s ease;
+  }
+  
+  .menu-trigger.active-1 span:nth-of-type(2) {
+    opacity: 0;
+    transition: all 0.2s ease;
+  }
+  
+  .menu-trigger.active-1 span:nth-of-type(3) {
+    transform: translateY(-8px) rotate(45deg);
+    width: 24px;
+    transition: all 0.4s ease;
+  }
+
+/* Sidebar_S */
+.sidebar {
+    width: 340px;
+    height: 100vh;
+    background-color: rgba(199, 214, 225, 0.6);
+    backdrop-filter: blur(10px);
+    position: fixed ;
+    top: 0; 
+    right: -340px;
+    box-sizing: border-box;
+    padding-top: 200px;
+    padding-right: 30px;
+    text-align: right;
+    border-radius: 30px 0 0 30px;
+    transition: 0.7s;
+    z-index: 90;
+
+}
+
+.sidebar.active {
+    right: 0;
+}
+.gnb{
+    display: block;
+}
+.sidemenu{
+    display: block;
+}
+.sidemenu a{
+    font-family: Montserrat;
+    font-size: 28px;
+    font-weight: 550;
+    color: #43505a;
+    letter-spacing: 1px;
+    display: block;
+    position: relative;
+}
+.sidemenu a.on{
+    color: #fff;
+}
+.gnb>li {
+    margin-bottom: 30px;
+}
+
+.gnb>li>a:hover {
+ 
+   color: #fff;
+}
+.submenu{
+    display: none;
+    padding-top: 13px;
+}
+.submenu a{
+    display: block;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 550;
+    color: #556570;
+    padding-bottom: 13px;
+}
+.submenu a:hover{
+    color: #8098b0;
+}
+/* Sidebar_E */
+
+/* Container_start */
+/* intro */
+#savetheearth{
+    width: 100vw;
+    height: 970px;
+    overflow: hidden;
+    background-attachment : fixed;
+    background-image: url(../image/save_the_earth/main.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+#savetheearth h2{
+    font-family: Montserrat;
+    font-size: 45px;
+    color: #43505a;
+}
+#savetheearth p{
+    font-family: "Pretendard Variable", sans-serif;
+    font-size: 18px;
+    letter-spacing: -1px;
+}
+
+.contents1{
+    width: 1320px;
+    height: 970px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding-top: 40px;
+}
+.contents1_wrap>h2, .contents1_wrap>p{
+    text-align: center;
+}
+.contents1_wrap>h2{
+    font-family: Montserrat;
+    font-size: 35px;
+    font-weight: 550;
+    color: #43505a;
+}
+.contents1_wrap>p{
+    font-family: "Pretendard Variable", sans-serif;
+    font-size: 18px;
+    letter-spacing: -1px;
+}
+.swiper{
+    width: 1320px;
+    height: 900px;
+    overflow: hidden;
+    margin-top: 40px;
+}
+
+.products{
+    position: relative;
+    display: block;
+    width: 1320px;
+    height: 900px;
+}
+
+.products_deco1, .products_deco2{
+        font-family: "Permanent Marker", cursive;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 65px;
+        letter-spacing: 3px;
+        position: absolute;
+        top: 450px;  
+}
+.meterial>.products_deco1, .meterial>.products_deco2{
+    top: 450px;  
+color: #93aeba;
+}
+.zerowaste>.products_deco1, .zerowaste>.products_deco2{
+color: #afc1a5;
+}
+.meterial>.products_deco1{
+    left: 80px;
+}
+.meterial>.products_deco2{
+    right: 40px;
+}
+.zerowaste>.products_deco1{
+    left: 280px;
+}
+.zerowaste>.products_deco2{
+    right: 270px;
+}
+.products_img1{
+    width: 750px;
+    height: 500px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.products-txt{
+    position: absolute;
+    z-index: 1;
+    top: 40px;
+    right: 40px;
+    font-family: "Pretendard Variable", sans-serif;
+    letter-spacing: -1px;
+}
+.products-txt>h3{
+    font-size: 35px;
+    font-weight: 550;
+    display: inline-block;
+    padding: 10px;
+    color: #ffffff;
+    margin-bottom: 25px;
+}
+.products-txt>p{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 35px;
+}
+.products_img2{
+    width: 420px;
+    height: 420px;
+    position: absolute;
+    top: 300px;
+    left: 500px;
+}
+.meterial>.products_img1{
+    background: url(../image/save_the_earth/meterial_1-1.jpg) no-repeat center 100%;
+}
+.meterial>.products_img2{
+    background: url(../image/save_the_earth/meterial_1-2.jpg) no-repeat center 100%;
+}
+.zerowaste>.products_img1{
+    background: url(../image/save_the_earth/meterial_2-1.jpg) no-repeat center 100%;
+}
+.zerowaste>.products_img2{
+    background: url(../image/save_the_earth/meterial_2-2.jpg) no-repeat center 100%;
+}
+/* Footer_ Strart */
+#footer {
+    background-color: #c7d6e1;
+    height: 360px;
+}
+
+.foot-wrap {
+    width: 1320px;
+    height: 300px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.foot_logo {
+    width: 660px;
+    height: 360px;
+    background-image: url(../image/ft_logo.png);
+    background-position: center 75px;
+    background-repeat: no-repeat;
+    background-size: 70%;
+}
+
+.foot-link {
+    width: 660px;
+    height: 360px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 80px 50px;
+    font-family: Montserrat;
+    color: #43505a;
+}
+
+.ft-tit {
+    font-size: 18px;
+    font-weight: 640;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.ft-sub li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.ft-sub li:hover{
+    text-decoration: underline;
+}
+.copyright-wrap {
+    background-color: #fff;
+    height: 60px;
+    border-top: 1px solid #505050;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 500;
+    color: #505050;
+}
+
+/* Footer_ End */

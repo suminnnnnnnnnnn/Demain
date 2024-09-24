@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1450">
+    <title>Demain</title>
+    <link rel="icon" href="./image/favicon.jpg">
+    <!-- css -->
+    <link rel="stylesheet" href="./css/sub3.css">
+
+    <!-- Fonts; GrapeNuts, Montserrat, Libre Baskerville, Pretendard-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Grape+Nuts&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" as="style" crossorigin
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+
+</head>
+
+<body>
+    <!-- HEADER; S -->
+    <div id="header">
+        <!-- fixed area -->
+        <div class="hd_content">
+            <div class="hd_content_wrap">
+
+                <h1 class="head_logo"><a href="./index.html"></a></h1>
+                <ul class="head_link">
+                    <li class="search"><a href="javascript:return false;"></a></li>
+                    <li class="cart"><a href="javascript:return false;"></a></li>
+                    <li class="menu"><a href="javascript:return false;" class="menu-trigger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </a></li>
+                </ul>
+            </div>
+            <!-- 사이드 메뉴 -->
+            <div class="sidebar">
+                <ul class="gnb">
+                    <li class="sidemenu">
+                        <a href="javascript:return false;">
+                            BRAND
+                        </a>
+                        <div class="submenu">
+                            <a href="./about.html">About Us</a>
+                            <a href="javascript:return false;">Save The Earth</a>
+                        </div>
+                    </li>
+                    <li class="sidemenu">
+                        <a href="javascript:return false;">
+                            PRODUCT
+                        </a>
+                        <div class="submenu">
+                            <a href="./product_0.html">All</a>
+                            <a href="./product_1.html">Body Care</a>
+                            <a href="./product_2.html">Hand Care</a>
+                            <a href="./product_3.html">Lip Care</a>
+                            <a href="./product_4.html">Zero Waste</a>
+                        </div>
+                    </li>
+                    <li class="sidemenu">
+                        <a href="javascript:return false;">
+                            COMMUNITY
+                        </a>
+                        <div class="submenu">
+                            <a href="javascript:return false;">Notice</a>
+                            <a href="javascript:return false;">Membership</a>
+                            <a href="javascript:return false;">Event</a>
+                        </div>
+                    </li>
+                    <li class="sidemenu">
+                        <a href="javascript:return false;">
+                            SERVICE
+                        </a>
+                        <div class="submenu">
+                            <a href="javascript:return false;">FAQ</a>
+                            <a href="javascript:return false;">Q&A</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+    </div>
+    <!-- fixed area -->
+    <!-- HEADER; E -->
+    <!-- CONTAINER; S -->
+    <div id="container">
+        <div class="community-tit">
+            <h2 style="font-size: 35px;">MEMBERSHIP</h2>
+        </div>
+        <div class="benefit_box coupon">
+            <h3 class="benefit_tit">Welcome Coupon</h3>
+            <p class="benefit_txt">회원가입과 동시에 신규회원 전용 30% 쿠폰이 자동 발급됩니다.</p>
+            <img src="./image/coupon.png" alt="coupon">
+            <p class="benefit_txt2">※ 적용품목에 따라 쿠폰 적용이 제한될 수 있습니다.
+                <br>(최대 2만원 할인)
+            </p>
+            <a href="" class="benefit_btn">가입하기</a>
+        </div>
+        <div class="benefit_box shipping">
+            <h3 class="benefit_tit">Free Shipping</h3>
+            <p class="benefit_txt">2만원 이상 제품 구매 시 무료배송 서비스가 제공됩니다.</p>
+            <img src="./image/shipping.png" alt="shipping">
+            <p class="benefit_txt2">※ 기본 배송비 3,000원,제주/도서산간비 3,000원 별도</p>
+            <a href="" class="benefit_btn">구매하기</a>
+        </div>
+
+        <div class="tab-container">
+            <div class="tabs on" style="background-color:#e1ebf3;" onclick="openTab('Tab1')">Welcome</div>
+            <div class="tabs" style="background-color:#ccd9e4;" onclick="openTab('Tab2')">Friends</div>
+            <div class="tabs" style="background-color:#b7cada;" onclick="openTab('Tab3')">VIP</div>
+            <div class="tabs" style="background-color:#869eb3;" onclick="openTab('Tab4')">SVIP</div>
+        </div>
+
+        <div class="tab_wrap">
+            <div id="Tab1" class="tab on">
+                <div class="standard" style="background-color: #e1ebf3;">
+                    <p>등급 기준</p>
+                    <h2>드메인 공식 온라인몰 신규회원</h2>
+                </div>
+                <div class="content_box">
+                    <div class="content_wrap">
+                        <h3>적립금</h3>
+                        <img src="./image/point.png" alt="point">
+                        <br>
+                        <p class="membership_content">종류와 상관없이 상품 구매 시, 구매 가격의 1% 포인트 적립 </p>
+                    </div>
+
+                    <div class="content_wrap">
+                        <h3>생일 쿠폰</h3>
+                        <img src="./image/birthday.png" alt="birthday">
+                        <br>
+                        <p class="membership_content">매년 생일 마다 5% 할인 쿠폰 발급</p>
+                    </div>
+
+                    <div class="content_wrap">
+                        <h3>추가 사은품</h3>
+                        <img src="./image/gift.png" alt="gift">
+                        <br>
+                        <p class="membership_content">4만원 이상 제품 구매 시, 추가 사은품 증정</p>
+                    </div>
+
+                    <div class="content_wrap">
+                        <h3>무료배송</h3>
+                        <img src="./image/delivery.png" alt="delivery">
+                        <br>
+                        <p class="membership_content">2만원 이상 제품 구매 시, 배송비 무료</p>
+                    </div>
+                </div>
+            </div>
+            <div id="Tab2" class="tab">
+                <div class="standard" style="background-color:#ccd9e4;">
+                    <p>등급 기준</p>
+                    <h2>최근 6개월 이내, 구매 금액 1만원 이상~15만원 미만</h2>
+                </div>
+                <div class="content_box">
+                    <div class="content_wrap">
+                        <h3>적립금</h3>
+                        <img src="./image/point.png" alt="point">
+                        <br>
+                        <p class="membership_content">종류와 상관없이 상품 구매 시, 구매 가격의 2% 포인트 적립 </p>
+                    </div>
+
+                    <div class="content_wrap">
+                        <h3>생일 쿠폰</h3>
+                        <img src="./image/birthday.png" alt="birthday">
+                        <br>
+                        <p class="membership_content">매년 생일 마다 10% 할인 쿠폰 발급</p>
+                    </div>
+
+                    <div class="content_wrap">
+                        <h3>추가 사은품</h3>
+                        <img src="./image/gift.png" alt="gift">
+                        <br>
+                        <p class="membership_content">4만원 이상 제품 구매 시, 추가 사은품 증정</p>
+                    </div>
+
+                    <div class="content_wrap">
+                        <h3>무료배송</h3>
+                        <img src="./image/delivery.png" alt="delivery">
+                        <br>
+                        <p class="membership_content">2만원 이상 제품 구매 시, 배송비 무료</p>
+                    </div>
+                </div>
+            </div>
+            <div id="Tab3" class="tab">
+                <div class="standard" style="background-color:#b7cada;">
+                    <p>등급 기준</p>
+                    <h2>최근 6개월 이내, 구매 금액 15만원 이상~30만원 미만</h2>
+                </div>
+                <div class="content_box">
+                    <div class="content_wrap">
+                        <h3>적립금</h3>
+                        <img src="./image/point.png" alt="point">
+                        <br>
+                        <p class="membership_content">종류와 상관없이 상품 구매 시, 구매 가격의 3% 포인트 적립 </p>
+                    </div>
+
+                    <div class="content_wrap">
+                        <h3>생일 쿠폰</h3>
+                        <img src="./image/birthday.png" alt="birthday">
+                        <br>
+                        <p class="membership_content">매년 생일 마다 15% 할인 쿠폰 발급</p>
+                    </div>
+
+                    <div class="content_wrap">
+                        <h3>추가 사은품</h3>
+                        <img src="./image/gift.png" alt="gift">
+                        <br>
+                        <p class="membership_content">4만원 이상 제품 구매 시, 추가 사은품 증정</p>
+                    </div>
+
+                    <div class="content_wrap">
+                        <h3>무료배송</h3>
+                        <img src="./image/delivery.png" alt="delivery">
+                        <br>
+                        <p class="membership_content" style="line-height: 30px;">2만원 이상 제품 구매 시, 배송비 무료
+                            <br>무료배송 쿠폰 증정
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="Tab4" class="tab">
+                <div class="standard" style="background-color:#869eb3;">
+                    <p>등급 기준</p>
+                    <h2>최근 6개월 이내, 구매 금액 30만원 이상</h2>
+                </div>
+                <div class="content_box">
+                    <div class="content_wrap">
+                        <h3>적립금</h3>
+                        <img src="./image/point.png" alt="point">
+                        <br>
+                        <p class="membership_content">종류와 상관없이 상품 구매 시, 구매 가격의 4% 포인트 적립 </p>
+                    </div>
+
+                    <div class="content_wrap">
+                        <h3>생일 쿠폰</h3>
+                        <img src="./image/birthday.png" alt="birthday">
+                        <br>
+                        <p class="membership_content">매년 생일 마다 20% 할인 쿠폰 발급</p>
+                    </div>
+
+                    <div class="content_wrap">
+                        <h3>추가 사은품</h3>
+                        <img src="./image/gift.png" alt="gift">
+                        <br>
+                        <p class="membership_content">4만원 이상 제품 구매 시, 추가 사은품 증정</p>
+                    </div>
+                    
+                    <div class="content_wrap">
+                        <h3>무료배송</h3>
+                        <img src="./image/delivery.png" alt="delivery">
+                        <br>
+                        <p class="membership_content" style="line-height: 30px;" >
+                            2만원 이상 제품 구매 시, 배송비 무료
+                            <br>무료배송 쿠폰 증정
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p style="
+        font-family: Pretendard Variable, sans-serif;
+        font-size: 14px;
+        line-height: 22px;
+        color: #505050;
+        width: 900px;
+        margin: auto;
+        margin-bottom: 50px;
+        ">
+        ㆍ본 멤버십은 드메인 온라인 공식몰 전용 멤버십으로, 외부몰 및 오프라인 매장과는 별도로 운영됩니다.
+        <br>ㆍ회원등급은 직전 6개월의 최종 실 결제금액 (할인쿠폰, 기타 제휴 할인 등의 실적 제외) 기준으로 매월 1일 (휴일일 경우 다음 영업일)에 조정됩니다.
+        <br>ㆍ회원등급 기준은 당사의 사정에 의해 변경될 수 있습니다.
+        <br>ㆍ등급산정기간 이후 구매취소로 실적 집계 기간 내 구매금액 기준보다 하락할 경우 등급과 혜택이 조정됩니다.
+        <br>ㆍ생일쿠폰의 경우, 회원 정보에 기재된 생년월일 기준으로 생일 7일전 쿠폰 형태로 연간 1회 지급됩니다.
+        <br>ㆍ생일쿠폰 지급시점 (생일7일전) 당일이나 그 이후에 가입시, 해당년도에는 생일쿠폰이 발급되지않고 그 다음해부터 발급됩니다.
+        <br>ㆍ쿠폰은 별도 언급이 없는 경우 타 쿠폰과 중복 사용이 불가능하며, 쿠폰 사용 시 일부제품은 적용 제외될 수 있습니다.
+        </p>
+
+    </div>
+    <!-- CONTAINER; E -->
+    <!-- FOOTER; S -->
+    <div id="footer">
+        <div class="foot-wrap">
+            <h1 class="foot_logo"></h1>
+            <ul class="foot-link">
+                <li>
+                    <h3 class="ft-tit">BRAND</h3>
+                    <ul class="ft-sub">
+                        <li><a href="">About us</a></li>
+                        <li><a href="">Zero Waste</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h3 class="ft-tit">COMMUNITY</h3>
+                    <ul class="ft-sub">
+                        <li><a href="">Notice</a></li>
+                        <li><a href="">Event</a></li>
+                        <li><a href="">Membership</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h3 class="ft-tit">ACCOUNT</h3>
+                    <ul class="ft-sub">
+                        <li><a href="">Login</a></li>
+                        <li><a href="">Order History</a></li>
+                        <li><a href="">Account Details</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h3 class="ft-tit">SERVICE</h3>
+                    <ul class="ft-sub">
+                        <li><a href="">FAQ</a></li>
+                        <li><a href="">Q&A</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="copyright-wrap">
+            Copyright © Demain. All rights reserved.
+        </div>
+    </div>
+
+    <!-- FOOTER; E -->
+
+    <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./js/main.js"></script>
+
+    <script>
+        function openTab(tabName) {
+            document.querySelectorAll('.tab, .tabs').forEach(function (el) {
+                el.classList.remove('on');
+            });
+            document.getElementById(tabName).classList.add('on');
+            document.querySelector('.tabs[onclick="openTab(\'' + tabName + '\')"]').classList.add('on');
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1450">
+    <title>Demain</title>
+    <link rel="icon" href="./image/favicon.jpg">
+    <!-- css -->
+    <link rel="stylesheet" href="css/sub1-1.css">
+    <link rel="stylesheet" href="css/jquery.fullPage.css">
+    <!--aos effect-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"><!--aos css 연결-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script><!--aos js 연결-->
+
+    <!-- Fonts; GrapeNuts, Montserrat, Libre Baskerville, Pretendard-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Grape+Nuts&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" as="style" crossorigin
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+
+</head>
+
+<body>
+    <!-- HEADER; S -->
+    <div id="header">
+        <!-- fixed area -->
+        <div class="hd_content">
+            <div class="hd_content_wrap">
+                <h1 class="head_logo"><a href="./index.html"></a></h1>
+                <ul class="head_link">
+                    <li class="search"><a href="javascript:return false;"></a></li>
+                    <li class="cart"><a href="javascript:return false;"></a></li>
+                    <li class="menu"><a href="javascript:return false;" class="menu-trigger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </a></li>
+                </ul>
+            </div>
+            <!-- 사이드 메뉴 -->
+            <div class="sidebar">
+                <ul class="gnb">
+                    <li class="sidemenu">
+                        <a href="javascript:return false;">
+                            BRAND
+                        </a>
+                        <div class="submenu">
+                            <a href="./about.html">About Us</a>
+                            <a href="javascript:return false;">Save The Earth</a>
+                        </div>
+                    </li>
+                    <li class="sidemenu">
+                        <a href="javascript:return false;">
+                            PRODUCT
+                        </a>
+                        <div class="submenu">
+                            <a href="./product_0.html">All</a>
+                            <a href="./product_1.html">Body Care</a>
+                            <a href="./product_2.html">Hand Care</a>
+                            <a href="./product_3.html">Lip Care</a>
+                            <a href="./product_4.html">Zero Waste</a>
+                        </div>
+                    </li>
+                    <li class="sidemenu">
+                        <a href="javascript:return false;">
+                            COMMUNITY
+                        </a>
+                        <div class="submenu">
+                            <a href="javascript:return false;">Notice</a>
+                            <a href="javascript:return false;">Membership</a>
+                            <a href="javascript:return false;">Event</a>
+                        </div>
+                    </li>
+                    <li class="sidemenu">
+                        <a href="javascript:return false;">
+                            SERVICE
+                        </a>
+                        <div class="submenu">
+                            <a href="javascript:return false;">FAQ</a>
+                            <a href="javascript:return false;">Q&A</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- fixed area -->
+    <!-- HEADER; E -->
+    <!-- CONTAINER; full page -->
+    <div id="fullpage">
+        <div class="section sec1" id="section0"><!--클래스section필수. 미리 정해져있는 모양-->
+            <div class="video">
+                <video src="./video/about-us1.mp4" autoplay muted loop></video>
+            </div>
+        </div>
+
+        <div class="section sec2" id="section1"><!--slide클래스시 해당 섹션안에서 가로 슬라이드-->
+            <div class="naming">
+                <div class="section-wrap">
+                <p class="about_img"></p>
+                <p class="slogan_left slogan" data-aos="fade-right" data-aos-duration="1500" data-aos-easing="ease-out"> 
+                    Better skin,
+                </p>
+                <p class="slogan_right slogan" data-aos="fade-left" data-aos-duration="1500" data-aos-easing="ease-out"
+                data-aos-delay="1000">
+                    Better tomorrow
+                </p>
+                <p style="font-size: 28px; line-height: 40px;" data-aos="fade-up"
+                data-aos-anchor-placement="center-center" data-aos-duration="1000" data-aos-delay="2000">
+                    ‘내일’이라는 뜻의 <span style="color: #6e93af;">Demain</span>은 나와 우리 그리고 더 나아가 세상의 모두가
+                    <br><span style="color: #6e93af; font-weight: 500;">지금보다 더 건강하고 밝은 내일</span>을 맞이하도록 하기 위한 고민으로부터
+                    출발하게 되었습니다.
+                </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section sec3" id="section2">
+            <div class="value">
+                <div class="section-wrap">
+                <div class="about_img">
+                    <video src="./video/sustainable.mp4" width="100%" height="100%" autoplay muted loop
+                        style="object-fit: fill; border-radius: 100%;"></video>
+                </div>                        
+                <p class="value_tit-l" data-aos="fade-right" data-aos-duration="1500">Sustainable</p>
+                        <p class="value_tit-r" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="800">Tomorrow</p>
+
+                <p class="value_txt" style="font-size: 28px; line-height: 40px;" data-aos="fade-up"
+                    data-aos-anchor-placement="center-center" data-aos-duration="1000" data-aos-delay="1500">
+                    드메인은 우리의 라이프 스타일이 환경과 밀접하게 연결되어 있다고 믿습니다.
+                    <br>건강한 환경이 곧 건강한 우리를 만들기에 <span style="color: #719378; font-weight: 500;">지속가능한 뷰티</span>에 대한 끊임없는
+                    고민을 통해 제품을 만들어냅니다.
+                </p>
+                </div>
+            </div>
+        </div>
+        <div class="section sec4" id="section3">
+            <div class="contents-box promise">
+                <h1 class="contents_tit">Our Promises</h1>
+                <div class="contents_wrap">
+                    <div class="img_wrap">
+                        <video src="./video/about-us2.mp4" width="100%" autoplay loop muted></video>
+                    </div>
+                    <div class="txt_wrap">
+                        <h2 class="contents_sub-tit" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"
+                            data-aos-duration="1100" data-aos-easing="ease">
+                            의식있는 제품을 만들어냅니다.
+                        </h2>
+                        <p class="contents_txt" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"
+                            data-aos-duration="1100" data-aos-easing="ease" data-aos-delay="500">
+                            드메인은 지속가능한 내일을 위한 노력을
+                            <br>제품의 시작과 끝까지 담아내도록 최선을 다합니다.
+                            <br>
+                            <span style="display: block; height: 20px;"></span>
+                            모든 제품은 100% 비건을 실현한 친환경 재료와
+                            <br>동물 실험을 철저히 배제한 연구를 통해 개발됩니다.
+                            <br>재생 소재와 분리배출이 용이한 단일 소재 사용으로
+                            <br>일회성 패키징을 최소화하고 플라스틱 사용을 줄이는
+                            <br>제로웨이스트를 위한 제품을 꾸준히 개발하고 있습니다.
+                            <span style="display: block; height: 50px;"></span>
+                            <!--  <br><span style="color: #6e91ac;">드메인과 가치있는 소비를 경험하세요.</span> -->
+                        </p>
+                        <div class="eco_mark" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"
+                            data-aos-duration="1100" data-aos-easing="ease" data-aos-delay="1000">
+                            <img src="./image/about_us/eco_mark/vegan friendly.png" alt="vegan">
+                            <img src="./image/about_us/eco_mark/cruelty free.png" alt="cruelty">
+                            <img src="./image/about_us/eco_mark/recycling package.png" alt="recycling">
+                            <img src="./image/about_us/eco_mark/conscious earth.png" alt="conscious">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section sec5" id="section4">
+            <div class="contents-box ingredient">
+                <h1 class="contents_tit">Our Ingredients</h1>
+                <div class="contents_wrap">
+                    <div class="img_wrap">
+                        <ul>
+                            <li>
+                                <img src="./image/about_us/about_ingredient_1.jpg" alt="ingredient_1">
+                            </li>
+                            <li>
+                                <img src="./image/about_us/about_ingredient_2.png" alt="ingredient_2">
+                            </li>
+                            <li>
+                                <img src="./image/about_us/about_ingredient_3.png" alt="ingredient_3">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="txt_wrap">
+                        <h2 class="contents_sub-tit" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"
+                            data-aos-duration="1100" data-aos-easing="ease">
+                            자연의 가치를 고스란히 담아냅니다.
+                        </h2>
+                        <p class="contents_txt" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"
+                            data-aos-duration="1100" data-aos-easing="ease" data-aos-delay="500">
+                            드메인은 자연의 원료가 주는 유익한 성분만을
+                            <br>피부에 전달할 수 있도록 끊임없이 연구합니다.
+                            <br><span></span>
+                            <br>피부에 건강하고 안전하게 효과를 나타내기 위해서
+                            <br>유기농과 친환경 인증을 거친 자연 유래 성분만을
+                            <br>제품에 담아내고 있습니다.
+                            <br><span></span>
+                            <br>또한, 합성 향료와 인체 유해 성분을 제외하고
+                            <br>생산과정에서 꼼꼼한 모니터링을 통해 안전하고
+                            <br>믿을 수 있는 상품만을 만들어냅니다.
+                        </p>
+                        <img class="rotate_txt" src="./image/about_us/rotate_txt.png" alt="rotate_txt">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section sec6" id="section5">
+            <div class="contents-box campaign">
+                <h1 class="contents_tit">Our Campaign</h1>
+                <div class="contents_wrap">
+                    <div class="img_wrap">
+                        <ul>
+                            <li>
+                                <img src="./image/about_us/about_campagin_1.png" alt="about_campagin_1">
+                            </li>
+                            <li>
+                                <img src="./image/about_us/about_campagin_2.png" alt="about_campagin_2">
+                            </li>
+                            <li>
+                                <img src="./image/about_us/about_campagin_3.png" alt="about_campagin_3">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="txt_wrap">
+                        <h2 class="contents_sub-tit" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"
+                            data-aos-duration="1100" data-aos-easing="ease">
+                            더 나은 지구를 위해 앞장섭니다.
+                        </h2>
+                        <p class="contents_txt" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"
+                            data-aos-duration="1100" data-aos-easing="ease" data-aos-delay="500">
+                            드메인은 우리가 실천했던 작은 노력들이
+                            <br>세상에 큰 변화를 가져다 줄 것을 믿습니다.
+                            <br>그렇기에 지속가능한 환경을 위한 책임감을 가지고
+                            <br>환경보존 활동에 꾸준히 힘을 보태고 있습니다.
+                            <br><span></span>
+                            <br>드메인의 제로웨이스트 제품의 수익 10%은
+                            <br>산림재건 단체 <포레스티>와 해양환경 보호단체 <블루오션>에
+                            <br>기부하여 환경보호와 더불어 가치있는 소비를 제공합니다.
+                            <span style="display: block; height: 10px;"></span>
+                            <br><span style="font-weight: 600;">드메인의 더 나은 지구를 위한 노력들을 만나보세요.</span>
+                        </p>
+                            <a href="javascript:return false;" class="bt_campaign">
+                        <span>Let's save the earth!</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section fp-auto-height" id="section5">
+            <div class="footer">
+                <div class="foot-wrap">
+                    <h1 class="foot_logo"></h1>
+                    <ul class="foot-link">
+                        <li>
+                            <h3 class="ft-tit">BRAND</h3>
+                            <ul class="ft-sub">
+                                <li><a href="">About us</a></li>
+                                <li><a href="">Zero Waste</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h3 class="ft-tit">COMMUNITY</h3>
+                            <ul class="ft-sub">
+                                <li><a href="">Notice</a></li>
+                                <li><a href="">Event</a></li>
+                                <li><a href="">Membership</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h3 class="ft-tit">ACCOUNT</h3>
+                            <ul class="ft-sub">
+                                <li><a href="">Login</a></li>
+                                <li><a href="">Order History</a></li>
+                                <li><a href="">Account Details</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h3 class="ft-tit">SERVICE</h3>
+                            <ul class="ft-sub">
+                                <li><a href="">FAQ</a></li>
+                                <li><a href="">Q&A</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="copyright-wrap">
+                    Copyright © Demain. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- header js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./js/main.js"></script>
+
+    <!-- essential js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.9.1/jquery-ui.min.js"
+        integrity="sha256-UezNdLBLZaG/YoRcr48I68gr8pb5gyTBM+di5P8p6t8=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+    <!-- aos -->
+    <script>
+        AOS.init();
+
+        $('[data-aos]').each(function () { $(this).addClass("aos-init"); });
+
+        $(document).ready(function () {
+            $("#fullpage").fullpage({
+                anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage'],
+                navigation: true,
+                navigationTooltips: ['', 'Story', 'Philosophy', 'Our Promises', 'Our Ingredients', 'Our Campagin'],
+                navigationPosition: 'right',
+                onLeave: function () {
+                    $('.section [data-aos]').each(function () {
+                        $(this).removeClass("aos-animate")
+                    });
+                },
+                onSlideLeave: function () {
+                    $('.slide [data-aos]').each(function () {
+                        $(this).removeClass("aos-animate")
+                    });
+                },
+                afterSlideLoad: function () {
+                    $('.slide.active [data-aos]').each(function () {
+                        $(this).addClass("aos-animate")
+                    });
+                },
+                afterLoad: function () {
+                    $('.section.active [data-aos]').each(function () {
+                        $(this).addClass("aos-animate")
+                    });
+                }
+            });
+        });
+
+
+    </script>
+    <script>
+        $(function(){
+    $(".ingredient .img_wrap ul li").hide();
+    $(".ingredient .img_wrap ul li:nth-child(1)").show();
+    setInterval(function(){
+        $(".ingredient .img_wrap li:nth-child(1)").fadeOut(2000).next().fadeIn(2000).end()
+        .appendTo(".ingredient .img_wrap ul");
+    }, 5000);
+});
+        $(function(){
+    $(".campaign .img_wrap ul li").hide();
+    $(".campaign .img_wrap ul li:nth-child(1)").show();
+    setInterval(function(){
+        $(".campaign .img_wrap li:nth-child(1)").fadeOut(2000).next().fadeIn(2000).end()
+        .appendTo(".campaign .img_wrap ul");
+    }, 5000);
+});
+
+    </script>
+</body>
+
+
+
+
+</html>

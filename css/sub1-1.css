@@ -1,0 +1,540 @@
+
+/* body{
+    width: 100%;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    min-width:1450px;
+} */
+*{
+    margin: 0;
+    padding: 0;
+    cursor: url(../image/cursor.png), auto;
+}
+ul {
+    list-style: none;
+}
+a:hover{
+    cursor: url(../image/cursor_click.png), auto;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+/* Header _ Start */
+
+/* 고정 헤더 */
+#header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 98;
+}
+
+.hd_content_wrap {
+    margin: 0;
+    width: 100%;
+    height: 65px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    position: fixed;
+    padding: 0 50px;
+    box-sizing: border-box;
+    z-index: 99;
+}
+.head_logo a {
+    width: 140px;
+    height: 65px;
+    background-position: center;
+    display: block;
+    background-image: url(../image/hd_logo.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    align-self: center;
+}
+
+.head_link {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+}
+
+.head_link li a {
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-size: 86%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.head_link li:nth-child(2) a {
+    margin: 0 25px;
+}
+
+.search a {
+    background-image: url(../image/search.png);
+}
+
+.cart a {
+    background-image: url(../image/cart.png);
+}
+/* 햄버거메뉴 */
+.menu-trigger,
+.menu-trigger span {
+  display: inline-block;
+  transition: all 0.4s;
+  box-sizing: border-box;
+}
+.menu-trigger {
+    position: relative;
+    width: 30px;
+    height: 30px;
+  }
+  
+  .menu-trigger span {
+    position: absolute;
+    left: 0;
+    width: 22px;
+    height: 3px;
+    background-color: #4b565e;
+    border-radius: 10px;
+  }
+  
+  .menu-trigger span:nth-of-type(1) {
+    top: 3px;
+  }
+  
+  .menu-trigger span:nth-of-type(2) {
+    top: 11px;
+  }
+  
+  .menu-trigger span:nth-of-type(3) {
+    bottom: 3px;
+  }
+  
+  /* 2th bar 사라지고,  1st 3rd bar 회전하며 X  */
+  
+  .menu-trigger.active-1 span:nth-of-type(1) {
+    transform: translateY(8px) rotate(-45deg);
+    width: 24px;
+  }
+  
+  .menu-trigger.active-1 span:nth-of-type(2) {
+    opacity: 0;
+  }
+  
+  .menu-trigger.active-1 span:nth-of-type(3) {
+    transform: translateY(-8px) rotate(45deg);
+    width: 24px;
+  }
+
+/* Sidebar_S */
+.sidebar {
+    width: 340px;
+    height: 100vh;
+    background-color: rgba(199, 214, 225, 0.6);
+    backdrop-filter: blur(10px);
+    position: fixed ;
+    top: 0; 
+    right: -340px;
+    box-sizing: border-box;
+    padding-top: 200px;
+    padding-right: 30px;
+    text-align: right;
+    border-radius: 30px 0 0 30px;
+    transition: 0.7s;
+    z-index: 90;
+
+}
+
+.sidebar.active {
+    right: 0;
+}
+.gnb{
+    display: block;
+}
+.sidemenu{
+    display: block;
+}
+.sidemenu a{
+    font-family: Montserrat;
+    font-size: 28px;
+    font-weight: 550;
+    color: #43505a;
+    letter-spacing: 1px;
+    display: block;
+    position: relative;
+}
+.sidemenu a.on{
+    color: #fff;
+}
+.gnb>li {
+    margin-bottom: 30px;
+}
+
+.gnb>li>a:hover {
+ 
+   color: #fff;
+}
+.submenu{
+    display: none;
+    padding-top: 13px;
+}
+.submenu a{
+    display: block;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 550;
+    color: #556570;
+    padding-bottom: 13px;
+}
+.submenu a:hover{
+    color: #8098b0;
+}
+/* Sidebar_E */
+
+/* full page */
+#fullpage{
+    font-family: "Pretendard Variable", sans-serif;
+    font-size: 23px;
+    font-weight: 400;
+    letter-spacing: -1.5px;
+    color: #43505a;
+    line-height: 36px;
+}
+/* 1번 페이지 */
+.video video{
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translate(-50%, -50%);
+
+}
+.section-wrap{
+    width: 1920px;
+    height: 100vh;
+    margin: 0 auto;
+}
+/* 2번 페이지 */
+.naming{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(0deg, #e8f2fc, #ffffff);
+}
+.naming .section-wrap{
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding-top: 100px;
+    padding-bottom: 150px;
+    justify-content: end;
+}
+.naming .about_img{
+    width: 470px;
+    height: 470px;
+    background-image: url(../image/about_us/about_1.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 170px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.slogan{
+    font-family: "Grape Nuts", cursive;
+    font-size: 50px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    color: #43505a;
+}
+.slogan_left{
+    position: absolute;
+    left: 30%;
+    top: 30%;
+}
+.slogan_right{
+    position: absolute;
+    right: 30%;
+    top: 50%;
+}
+/* 3번 페이지 */
+.value{
+    width: 100%;
+    height: 100%;
+    /* background-image: url(../image/about_us/about_2_bg.png);
+    background-repeat: no-repeat;
+    background-size: 100%; */
+    background-image: linear-gradient(0deg, #ecf1e9, #ffffff);
+}
+.value .section-wrap{
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    box-sizing: border-box;
+    padding-top: 100px;
+    padding-bottom: 150px;
+}
+.value .about_img{
+    position: absolute;
+    top: 170px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 470px;
+    height: 470px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+}
+.value_tit-l, .value_tit-r{
+    color: #56685a;
+    font-family: "Grape Nuts", cursive;
+    font-size: 48px;
+    font-weight: 550;
+    letter-spacing: 5px;
+    line-height: 70px;
+    position: absolute;
+    /* text-shadow: 0px 0px 2px #4d5a47; */
+}
+.value_tit-l{
+    top: 350px;
+    left: 440px;
+}
+.value_tit-r{
+    top: 350px;
+    right: 470px;
+}
+/* 메인 컨텐츠 */
+.contents-box{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding-top: 50px;
+}
+.contents_tit{
+    font-family: "Grape Nuts", cursive;
+    font-size: 50px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.contents_wrap{
+    width: 1920px;
+    height: 1080px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;}
+
+.img_wrap{
+    width: 50%;
+    height: 500px;
+    border-radius: 0px 40px 40px 0px;
+    overflow: hidden;
+    margin-top: 100px;
+}
+.txt_wrap{
+    width: 47%;
+    height: 700px;
+    border-radius: 40px 0px 0px 40px;
+    box-sizing: border-box;
+    padding: 70px;
+}
+.contents_sub-tit{
+    font-size: 34px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    color: #617683;
+}
+.img_wrap .video{
+    object-fit: fill;
+}
+.contents_txt{
+    font-size: 24px;
+    line-height: 38px;
+    letter-spacing: -1px;
+}
+/* 4번 페이지 */
+.promise .txt_wrap{
+    background-color: #eef3f5;
+}
+.eco_mark img:nth-of-type(1), .eco_mark img:nth-of-type(2), .eco_mark img:nth-of-type(3){
+    margin-right: 30px;
+}
+.eco_mark{
+    margin-top: 30px;
+}
+/* 5번째 페이지 */
+.ingredient{
+    background-color: #ecf1e9;
+}
+.ingredient .txt_wrap{
+    background-color: #ffffff;
+    position: relative;
+}
+.ingredient .img_wrap{
+    position: relative;
+}
+.ingredient ul li{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.ingredient ul li img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.rotate_txt{
+    opacity: 100%;
+    position: absolute;
+    right: 20%;
+    bottom: 6%;
+    animation: rotate_txt 90s linear infinite;transform-origin: 50% 50%;
+}
+
+@keyframes rotate_txt{
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* 6번째 페이지 */
+.campaign{
+    background-color: #ffffff;
+}
+.campaign .txt_wrap{
+    background-color: #eef0f1;
+}
+.campaign .img_wrap{
+    background-color: #eef0f1;
+}
+.campaign .img_wrap{
+    position: relative;
+}
+.campaign ul li{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.campaign ul li img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.bt_campaign{
+    display: inline-block;
+    font-family: Montserrat;
+    font-size: 22px;
+    font-weight: 650;
+    letter-spacing: 0;
+    padding: 15px 80px;
+    background-color: #ffffff;
+    border-radius: 40px;
+    margin-top: 30px;
+    border: none;
+    overflow: hidden;
+    position: relative;
+}
+.bt_campaign span{
+    display: inline-block;
+}
+.bt_campaign:hover span{
+    transform: translateX(20%);
+    transition: all 1s;
+}
+.bt_campaign:hover{
+    background: none;
+    border: 2px solid #43505a;
+}
+.bt_campaign span::before{
+    content: url(../image/about_us/arrow.png);
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: -90px;
+}
+
+
+/* Footer_ Strart */
+.footer {
+    background-color: #c7d6e1;
+    height: 360px;
+    margin-top: 150px;
+}
+
+.foot-wrap {
+    width: 1320px;
+    height: 300px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.foot_logo {
+    width: 660px;
+    height: 360px;
+    background-image: url(../image/ft_logo.png);
+    background-position: center 75px;
+    background-repeat: no-repeat;
+    background-size: 70%;
+}
+
+.foot-link {
+    width: 660px;
+    height: 360px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 80px 50px;
+    font-family: Montserrat;
+    color: #43505a;
+}
+
+.ft-tit {
+    font-size: 18px;
+    font-weight: 640;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.ft-sub li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.ft-sub li:hover{
+    text-decoration: underline;
+}
+.copyright-wrap {
+    background-color: #fff;
+    height: 60px;
+    border-top: 1px solid #505050;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 500;
+    color: #505050;
+}
+
+/* Footer_ End */
