@@ -7,6 +7,7 @@
 
 body {
     width: 100vw;
+    position: absoulute;
     left: 0;
     top: 0;
     right: 0;
