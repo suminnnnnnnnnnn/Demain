@@ -17,6 +17,9 @@ body {
     overflow-y: auto;
     min-width: 1400px;
     max-width: 100%;
+        -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
     cursor: url(../image/cursor.png), auto;
 }
 a:hover{
