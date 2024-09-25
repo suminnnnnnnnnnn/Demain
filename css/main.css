@@ -285,8 +285,7 @@ body::-webkit-scrollbar-track {
 .txt-flow {
     font-family: "Grape Nuts", cursive;
     font-weight: 500;
-    font-style: normal;
-    font-size: 34px;
+    font-size: 36px;
     color: #505050;
     letter-spacing: 3px;
     white-space: nowrap;
@@ -294,6 +293,7 @@ body::-webkit-scrollbar-track {
     animation: flow 120s linear infinite;
     display: flex;
     flex-flow: row nowrap;
+    gap: 25px;
     height: 90px;
 }
 
@@ -310,7 +310,6 @@ body::-webkit-scrollbar-track {
 .txt-flow p {
     align-self: center;
 }
-
 .txt-flow img{
     display: block;
     width: 185px;
@@ -318,7 +317,6 @@ body::-webkit-scrollbar-track {
     object-fit: cover;
     align-self: center;
 }
-
 
 
 /* 베스트상품*/
