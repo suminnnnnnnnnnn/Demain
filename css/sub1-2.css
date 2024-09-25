@@ -5,7 +5,8 @@
 }
 
 body {
-    width: 100%;
+    width: 100vw;
+    position: absoulute;
     left: 0;
     top: 0;
     right: 0;
@@ -13,6 +14,10 @@ body {
     overflow-x: hidden;
     overflow-y: auto;
     min-width: 1450px;
+    max-width: 100%;
+        -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
     cursor: url(../image/cursor.png), auto;
 }
 a:hover{
