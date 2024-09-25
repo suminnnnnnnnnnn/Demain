@@ -4,7 +4,8 @@
     margin: 0;
     box-sizing: border-box;
 }
-
+html{
+    max-width: 100%;}
 body {
     width: 100vw;
     position: absoulute;
@@ -15,6 +16,7 @@ body {
     overflow-x: hidden;
     overflow-y: auto;
     min-width: 1400px;
+    max-width: 100%;
     cursor: url(../image/cursor.png), auto;
 }
 a:hover{
