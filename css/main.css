@@ -13,7 +13,7 @@ body {
     bottom: 0;
     overflow-x: hidden;
     overflow-y: auto;
-    min-width: 1450px;
+    min-width: 1400px;
     cursor: url(../image/cursor.png), auto;
 }
 a:hover{
