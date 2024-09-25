@@ -309,12 +309,14 @@ body::-webkit-scrollbar-track {
     align-self: center;
 }
 
-.txt-flow img {
-    width: 60%;
-    height: 90px;
-    padding: 20px 40px;
+.txt-flow img{
+    display: block;
+    width: 185px;
+    height: 50px;
     object-fit: cover;
+    align-self: center;
 }
+
 
 
 /* 베스트상품*/
