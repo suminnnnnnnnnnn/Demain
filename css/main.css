@@ -224,7 +224,7 @@ body::-webkit-scrollbar-track {
 
 /* 메인 영상 */
 .main_video {
-    width: 100%;
+    width: 100vw;
     height: 695px;
     overflow: hidden;
     position: relative;
@@ -272,10 +272,11 @@ body::-webkit-scrollbar-track {
 
 /* TEXT FLOW */
 .txt-flow_wrap {
-    width: 100%;
+    width: 100vw;
     height: 90px;
-    border-top: 3px solid #505050;
-    border-bottom: 3px solid #505050;
+    background-color:#ededed;
+    /* border-top: 2px solid #505050;
+    border-bottom: 2px solid #505050; */
     overflow: hidden;
     position: relative;
 }
@@ -418,7 +419,7 @@ body::-webkit-scrollbar-track {
 
 /* 베스트;포인트배경 */
 .list_bg {
-    width: 100%;
+    width: 100vw;
     height: 270px;
     background-color: #c7d6e1;
     z-index: -99;
@@ -847,7 +848,7 @@ body::-webkit-scrollbar-track {
 /* 콜렉션;포인트배경 */
 
 .list_bg_2 {
-    width: 100%;
+    width: 100vw;
     height: 270px;
     background-color: #c7d6e1;
     z-index: -100;
@@ -1057,6 +1058,7 @@ body::-webkit-scrollbar-track {
 
 /* Footer_ Strart */
 #footer {
+    width:100vw;
     background-color: #c7d6e1;
     height: 360px;
 }
