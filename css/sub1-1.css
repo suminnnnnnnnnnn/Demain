@@ -207,14 +207,6 @@ a {
     color: #43505a;
     line-height: 36px;
 }
-.section{
-    position: relative;
-}
-.section-wrap{
-    width: 1920px;
-    height: 1080px;
-    margin: 0 auto;
-}
 /* 1번 페이지 */
 .video video{
     object-fit: cover;
@@ -226,8 +218,14 @@ a {
     transform: translate(-50%, -50%);
 
 }
-
 /* 2번 페이지 */
+.wrap{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
 .naming{
     width: 100%;
     height: 100%;
@@ -239,8 +237,7 @@ a {
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
-    padding-top: 100px;
-    padding-bottom: 150px;
+    padding-bottom: 270px;
     justify-content: end;
 }
 .naming .about_img{
@@ -249,7 +246,7 @@ a {
     background-image: url(../image/about_us/about_1.png);
     background-repeat: no-repeat;
     position: absolute;
-    top: 170px;
+    top: 140px;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -263,12 +260,12 @@ a {
 .slogan_left{
     position: absolute;
     left: 30%;
-    top: 30%;
+    top: 20%;
 }
 .slogan_right{
     position: absolute;
-    right: 30%;
-    top: 50%;
+    right: 25%;
+    top: 45%;
 }
 /* 3번 페이지 */
 .value{
@@ -284,10 +281,9 @@ a {
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: end;
     box-sizing: border-box;
-    padding-top: 100px;
-    padding-bottom: 150px;
+    padding-bottom: 270px;
+    justify-content: end;
 }
 .value .about_img{
     position: absolute;
@@ -320,6 +316,14 @@ a {
     right: 470px;
 }
 /* 메인 컨텐츠 */
+.section{
+    position: relative;
+}
+.section-wrap{
+    width: 1920px;
+    height: 1080px;
+    margin: 0 auto;
+}
 .contents-box{
     position: absolute;
     top: 0;
@@ -483,7 +487,7 @@ a {
 
 /* Footer_ Strart */
 .footer {
-    background-color: #c7d6e1;
+    background-color: #d6e3ef;
     height: 360px;
     margin-top: 150px;
 }
